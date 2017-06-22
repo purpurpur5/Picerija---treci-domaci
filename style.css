@@ -1,0 +1,115 @@
+/*header*/
+body{
+	font-family: 'Open Sans', sans-serif;
+	background-color: #ffffff;
+}
+
+header{
+    font-size: 20px;
+    height: 50px;
+    position: fixed;
+    z-index: 1;
+}
+
+/*navigacijski deo headera - problem jer absolute elementi prolaze kroz njega
+							-namestio sa z-indexom 1 */
+
+ul{
+	float: right;
+	margin-top: 30px;
+}
+
+li{
+	display: inline-block;
+	list-style: none;
+}
+
+a{ 
+	text-decoration: none;
+	color: #821D09;
+	margin: 40px 20px 40px 0px;
+}
+
+a:hover{
+	opacity: 0.4;
+}
+
+.clearfix{
+	clear: both;
+}
+
+nav{
+	height: 90px;
+	background-color: #ffffff;
+	border-bottom: 2px solid #800000;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+}
+
+.clearfix nav{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+
+.clearfix .logo{
+	position: fixed;
+	float: left;
+	height: 70px;
+	width: auto;
+	margin: 10px 40px 10px 40px;
+}   /* kraj headera*/
+
+#pozadina div{
+	width: 100%;
+	height: 400px;
+	background-image: url(images/pattern.png);
+	background-repeat: repeat;
+	background-size: contain;
+	border-bottom: 2px solid #800000;
+	margin:0px;
+}
+/*ovako pise na w3school ali ne razumem zasto je ne skalira nego samo skroluje po njoj*/
+
+#meni{
+	height: auto;
+	width: 100%;
+	margin: 0 auto	;
+	display: inline-block;
+	float: left;
+	background-color: #ffffff;
+}
+
+.pizzabox{
+	display: inline-block;
+	height: 200px;
+	width: 250px;
+	font-size: 14px;
+	text-align: center;
+	margin: 50px 40px 50px 40px;
+	border: 2px solid #800000;
+	position: relative;
+	float: left;
+
+}
+
+#meni .pizzabox img{
+	height: 100px;
+	width: 250px;
+	position: absolute;
+	top: 0%;
+	left: 0px;
+} /*zavrsen meni deo, mrzelo me da stavljam sve pice pa sam kopirao ove postojece*/
+
+/*pocinje footer*/
+
+#kontakt{
+	display: inline-block;
+	margin: 0 auto;
+	border-top: 2px solid #800000;
+	height: 70px;
+	width: 100%;
+} /*kraj footera*/
